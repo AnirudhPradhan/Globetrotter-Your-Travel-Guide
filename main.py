@@ -1,27 +1,67 @@
-from flask import Flask, render_template, request, session, redirect, flash, url_for
+from flask import Flask, render_template, request, session, redirect, url_for
 import json
 import random
 import secrets
 import bcrypt
 from flask_sqlalchemy import SQLAlchemy
+from functools import wraps
 
-secret_key = secrets.token_hex(16)
-
+# Initialize Flask app
 app = Flask(__name__)
-app.secret_key = secret_key
+app.secret_key = secrets.token_hex(32)  # Increased to 32 bytes for better security
+app.config['SESSION_COOKIE_SECURE'] = True
+app.config['SESSION_COOKIE_HTTPONLY'] = True
+app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'
 
+# Database Configuration
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db = SQLAlchemy(app)
 
-def load_destinations(): 
+# Custom Decorator for Authentication
+def login_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if 'email' not in session:
+            return redirect(url_for('login'))
+        return f(*args, **kwargs)
+    return decorated_function
+
+# Database Model
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100), nullable=False)
+    email = db.Column(db.String(100), nullable=False, unique=True)
+    password = db.Column(db.String(100), nullable=False)
+
+    def __init__(self, email, password, name):
+        self.name = name
+        self.email = email
+        self.password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')
+    
+    def check_password(self, password):
+        return bcrypt.checkpw(password.encode('utf-8'), self.password.encode('utf-8'))
+
+# Create Database Tables
+with app.app_context():
+    db.create_all()
+
+# Helper Functions
+def load_destinations():
     with open("Dataset/destinations.json", "r") as file:
         return json.load(file)
 
-# @app.route("/", methods=["GET"])
-@app.route("/dashboard", methods=["GET"])
-def index():
+# Routes
+@app.route('/')
+def home():
+    return redirect(url_for('login'))
+
+@app.route('/dashboard')
+@login_required
+def dashboard():
     destinations = load_destinations()
     destination = random.choice(destinations)
     
-    # Store destination in session for answer verification
     session['current_destination'] = destination
     
     return render_template(
@@ -33,11 +73,11 @@ def index():
     )
 
 @app.route("/check_answer", methods=["POST"])
+@login_required
 def check_answer():
     user_answer = request.form.get("option")
     destination = session.get('current_destination', {})
     
-    # Prepare result details
     result = {
         "is_correct": user_answer == destination.get("city", ""),
         "user_answer": user_answer,
@@ -48,34 +88,6 @@ def check_answer():
 
     return render_template("result.html", result=result)
 
-
-
-
-
-''' user auth '''
-
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
-app.secret_key = 'your_secure_secret_key_here'  # Change to a random secret key
-db = SQLAlchemy(app)
-
-class User(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(100), nullable=False)
-    email = db.Column(db.String(100), nullable=False, unique=True)  # Should be unique
-    password = db.Column(db.String(100), nullable=False)
-
-    def __init__(self, email, password, name):
-        self.name = name
-        self.email = email
-        self.password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')
-    
-    def check_password(self, password):
-        return bcrypt.checkpw(password.encode('utf-8'), self.password.encode('utf-8'))
-
-# Create Database tables
-with app.app_context():
-    db.create_all()
-
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
@@ -83,11 +95,9 @@ def register():
         email = request.form.get('email')
         password = request.form.get('password')
 
-        # Validate required fields
         if not all([name, email, password]):
             return render_template('register.html', error='All fields are required')
 
-        # Check if email already exists
         if User.query.filter_by(email=email).first():
             return render_template('login.html', error='Email already registered')
 
@@ -95,14 +105,13 @@ def register():
             new_user = User(name=name, email=email, password=password)
             db.session.add(new_user)
             db.session.commit()
-            return redirect('/login')
+            return redirect(url_for('login'))
         except Exception as e:
             db.session.rollback()
             return render_template('register.html', error=str(e))
 
     return render_template('register.html')
 
-@app.route('/')
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     error = session.pop('login_error', None)
@@ -113,39 +122,27 @@ def login():
 
         if not all([email, password]):
             session['login_error'] = 'All fields are required'
-            return redirect('login')
+            return redirect(url_for('login'))
 
         user = User.query.filter_by(email=email).first()
         
         if not user:
             session['login_error'] = 'User does not exist'
-            return redirect('register')
+            return redirect(url_for('register'))
         
         if not user.check_password(password):
             session['login_error'] = 'Invalid credentials'
-            return redirect('login')
+            return redirect(url_for('login'))
         
         session['email'] = user.email
-        return redirect('dashboard')
+        return redirect(url_for('dashboard'))
 
     return render_template('login.html', error=error)
-
-
-# @app.route('/dashboard')
-# def dashboard():
-#     if 'email' not in session:
-#         return redirect('/login')
-    
-#     user = User.query.filter_by(email=session['email']).first()
-#     if not user:
-#         return redirect('/logout')
-    
-#     return render_template('dashboard.html', user=user)
 
 @app.route('/logout')
 def logout():
     session.pop('email', None)
-    return redirect('/login')
+    return redirect(url_for('login'))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True)  
