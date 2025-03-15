@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="quiz-card">
+    <h2>Where in the world?</h2>
+    <div class="clues">
+        <div class="clue">
+            <span class="clue-number">Clue 1</span>
+            <p>{{ clues[0] }}</p>
+        </div>
+        <div class="clue">
+            <span class="clue-number">Clue 2</span>
+            <p>{{ clues[1] }}</p>
+        </div>
+    </div>
+
+    <form method="POST" action="{{ url_for('check_answer') }}">
+        <div class="options-grid">
+            {% for option in options %}
+            <label class="option-card">
+                <input type="radio" name="option" value="{{ option }}" required>
+                <span class="option-text">{{ option }}</span>
+            </label>
+            {% endfor %}
+        </div>
+        <button type="submit" class="submit-btn">Reveal Destination</button>
+    </form>
+</div>
+{% endblock %}

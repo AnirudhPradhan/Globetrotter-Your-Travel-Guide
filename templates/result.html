@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="result-card">
+    {% if result.is_correct %}
+    <div class="correct-banner">
+        <h2>🎉 Correct! 🎉</h2>
+        <p>You guessed {{ result.user_answer }}!</p>
+    </div>
+    {% else %}
+    <div class="incorrect-banner">
+        <h2>❌ Try Again! ❌</h2>
+        <p>You guessed {{ result.user_answer }}</p>
+        <p>The correct answer was {{ result.correct_answer }}</p>
+    </div>
+    {% endif %}
+
+    <div class="destination-facts">
+        <h3>Did you know?</h3>
+        <div class="fact-group">
+            <h4>Fun Facts</h4>
+            <ul>
+                {% for fact in result.fun_facts %}
+                <li>{{ fact }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        
+        <div class="fact-group">
+            <h4>Trivia</h4>
+            <ul>
+                {% for item in result.trivia %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <a href="{{ url_for('index') }}" class="play-again-btn">Explore Another Destination</a>
+</div>
+{% endblock %}
