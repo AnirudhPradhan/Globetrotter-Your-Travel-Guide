@@ -76,7 +76,6 @@ class User(db.Model):
 with app.app_context():
     db.create_all()
 
-@app.route('/')
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
@@ -103,6 +102,7 @@ def register():
 
     return render_template('register.html')
 
+@app.route('/')
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     error = session.pop('login_error', None)
@@ -118,8 +118,8 @@ def login():
         user = User.query.filter_by(email=email).first()
         
         if not user:
-            session['login_error'] = 'Email does not exist'
-            return redirect('login')
+            session['login_error'] = 'User does not exist'
+            return redirect('register')
         
         if not user.check_password(password):
             session['login_error'] = 'Invalid credentials'
