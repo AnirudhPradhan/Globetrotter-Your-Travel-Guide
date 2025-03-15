@@ -14,7 +14,12 @@
       "This city is famous for its croissants and macarons. Bon appétit!",
       "Paris was originally a Roman city called Lutetia."
     ],
-    "options": ["Paris", "London", "Rome", "Berlin"]
+    "options": [
+      "Paris",
+      "London",
+      "Rome",
+      "Berlin"
+    ]
   },
   {
     "city": "Tokyo",
@@ -31,7 +36,12 @@
       "The city has over 160,000 restaurants, more than any other city in the world.",
       "Tokyo’s subway system is so efficient that train delays of just a few minutes come with formal apologies."
     ],
-    "options": ["Beijing", "Seoul", "Tokyo", "Bangkok"]
+    "options": [
+      "Beijing",
+      "Seoul",
+      "Tokyo",
+      "Bangkok"
+    ]
   },
   {
     "city": "New York",
@@ -48,6 +58,1155 @@
       "New York City has 468 subway stations, making it one of the most complex transit systems in the world.",
       "The Empire State Building has its own zip code: 10118."
     ],
-    "options": ["New York", "Los Angeles", "Chicago", "San Francisco"]
+    "options": [
+      "New York",
+      "Los Angeles",
+      "Chicago",
+      "San Francisco"
+    ]
+  },
+  {
+    "city": "Sydney",
+    "country": "Australia",
+    "clues": [
+      "This city is famous for its iconic opera house and harbor bridge.",
+      "Known for its beautiful beaches like Bondi and Manly."
+    ],
+    "fun_fact": [
+      "The Sydney Opera House has over 1 million roof tiles.",
+      "Sydney is home to the famous Blue Mountains."
+    ],
+    "trivia": [
+      "Sydney hosted the 2000 Summer Olympics.",
+      "The city has a diverse cultural scene with many festivals throughout the year."
+    ],
+    "options": [
+      "Sydney",
+      "Melbourne",
+      "Perth",
+      "Brisbane"
+    ]
+  },
+  {
+    "city": "Rome",
+    "country": "Italy",
+    "clues": [
+      "This city is home to the Colosseum, one of the Seven Wonders of the Medieval World.",
+      "Known for its ancient Roman ruins and delicious Italian cuisine."
+    ],
+    "fun_fact": [
+      "Rome was founded by Romulus and Remus, according to legend.",
+      "The Trevi Fountain is one of the oldest water sources in Rome."
+    ],
+    "trivia": [
+      "Rome is home to the Vatican City, an independent city-state.",
+      "The Pantheon in Rome is one of the best-preserved ancient Roman buildings."
+    ],
+    "options": [
+      "Rome",
+      "Florence",
+      "Venice",
+      "Milan"
+    ]
+  },
+  {
+    "city": "Beijing",
+    "country": "China",
+    "clues": [
+      "This city is famous for the Great Wall of China.",
+      "Known for its Forbidden City and delicious Peking duck."
+    ],
+    "fun_fact": [
+      "Beijing hosted the 2008 Summer Olympics.",
+      "The city has a rich history dating back over 3,000 years."
+    ],
+    "trivia": [
+      "The Forbidden City is the largest palace complex in the world.",
+      "Beijing is home to many ancient temples and gardens."
+    ],
+    "options": [
+      "Beijing",
+      "Shanghai",
+      "Guangzhou",
+      "Hong Kong"
+    ]
+  },
+  {
+    "city": "London",
+    "country": "UK",
+    "clues": [
+      "This city is famous for Buckingham Palace and the British Museum.",
+      "Known for its iconic red phone booths and double-decker buses."
+    ],
+    "fun_fact": [
+      "London has more museums and galleries than any other city in the world.",
+      "The London Underground is the oldest subway system globally."
+    ],
+    "trivia": [
+      "London is home to many famous theaters in the West End.",
+      "The city has a diverse cultural scene with many international cuisines."
+    ],
+    "options": [
+      "London",
+      "Manchester",
+      "Birmingham",
+      "Leeds"
+    ]
+  },
+  {
+    "city": "Bangkok",
+    "country": "Thailand",
+    "clues": [
+      "This city is known for its vibrant street food and night markets.",
+      "Famous for its ornate temples like Wat Phra Kaew."
+    ],
+    "fun_fact": [
+      "Bangkok is home to the Grand Palace, one of the most iconic landmarks in Thailand.",
+      "The city has a bustling floating market where you can buy goods from boats."
+    ],
+    "trivia": [
+      "Bangkok is often called the 'Venice of the East' due to its many canals.",
+      "The city hosts the famous Songkran water festival each year."
+    ],
+    "options": [
+      "Bangkok",
+      "Chiang Mai",
+      "Phuket",
+      "Koh Samui"
+    ]
+  },
+  {
+    "city": "Cairo",
+    "country": "Egypt",
+    "clues": [
+      "This city is home to the Pyramids of Giza, one of the Seven Wonders of the Ancient World.",
+      "Known for its rich history and ancient Egyptian museums."
+    ],
+    "fun_fact": [
+      "Cairo is home to the Egyptian Museum, which houses the world’s largest collection of ancient Egyptian artifacts.",
+      "The city has a vibrant bazaar called Khan el-Khalili."
+    ],
+    "trivia": [
+      "Cairo is one of the oldest continuously inhabited cities in the world.",
+      "The city is situated near the Nile River."
+    ],
+    "options": [
+      "Cairo",
+      "Alexandria",
+      "Giza",
+      "Luxor"
+    ]
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "clues": [
+      "This city is famous for its Burj Khalifa, the tallest building in the world.",
+      "Known for its luxurious shopping malls and gold markets."
+    ],
+    "fun_fact": [
+      "Dubai has transformed from a small trading port to a modern city in just a few decades.",
+      "The city hosts the Dubai Mall, one of the largest shopping centers globally."
+    ],
+    "trivia": [
+      "Dubai is home to the Dubai Miracle Garden, a floral wonderland.",
+      "The city has a diverse expat community with many international cuisines."
+    ],
+    "options": [
+      "Dubai",
+      "Abu Dhabi",
+      "Sharjah",
+      "Ras al-Khaimah"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "country": "India",
+    "clues": [
+      "This city is known as the financial capital of India.",
+      "Famous for its Bollywood film industry."
+    ],
+    "fun_fact": [
+      "Mumbai is home to the Gateway of India, a historic monument.",
+      "The city has a vibrant street food scene with dishes like vada pav."
+    ],
+    "trivia": [
+      "Mumbai is one of the most populous cities in the world.",
+      "The city hosts the famous Ganesh Chaturthi festival."
+    ],
+    "options": [
+      "Mumbai",
+      "Delhi",
+      "Bangalore",
+      "Hyderabad"
+    ]
+  },
+  {
+    "city": "Shanghai",
+    "country": "China",
+    "clues": [
+      "This city is known for its futuristic skyline and vibrant nightlife.",
+      "Famous for its iconic Oriental Pearl Tower."
+    ],
+    "fun_fact": [
+      "Shanghai is one of the busiest ports in the world.",
+      "The city has a rich history as a major trading center."
+    ],
+    "trivia": [
+      "Shanghai is home to many international companies and financial institutions.",
+      "The city hosts the Shanghai International Film Festival."
+    ],
+    "options": [
+      "Shanghai",
+      "Beijing",
+      "Guangzhou",
+      "Hong Kong"
+    ]
+  },
+  {
+    "city": "Los Angeles",
+    "country": "USA",
+    "clues": [
+      "This city is known as the 'City of Angels' and is famous for Hollywood.",
+      "Home to many beaches like Santa Monica and Venice."
+    ],
+    "fun_fact": [
+      "Los Angeles is home to the Walk of Fame, where you can find stars dedicated to celebrities.",
+      "The city has a diverse cultural scene with many museums and art galleries."
+    ],
+    "trivia": [
+      "Los Angeles hosted the 1984 Summer Olympics.",
+      "The city is known for its car culture and extensive freeway system."
+    ],
+    "options": [
+      "Los Angeles",
+      "New York",
+      "Chicago",
+      "San Francisco"
+    ]
+  },
+  {
+    "city": "Berlin",
+    "country": "Germany",
+    "clues": [
+      "This city is famous for its Berlin Wall and Checkpoint Charlie.",
+      "Known for its vibrant arts scene and nightlife."
+    ],
+    "fun_fact": [
+      "Berlin is home to many museums and galleries, including Museum Island.",
+      "The city has a rich history as the capital of Prussia and Germany."
+    ],
+    "trivia": [
+      "Berlin hosted the 1936 Summer Olympics.",
+      "The city is known for its techno music scene."
+    ],
+    "options": [
+      "Berlin",
+      "Munich",
+      "Hamburg",
+      "Frankfurt"
+    ]
+  },
+  {
+    "city": "Kuala Lumpur",
+    "country": "Malaysia",
+    "clues": [
+      "This city is famous for its Petronas Twin Towers.",
+      "Known for its diverse cultural heritage and street food."
+    ],
+    "fun_fact": [
+      "Kuala Lumpur is home to the Batu Caves, a series of limestone caves.",
+      "The city hosts the Thaipusam festival, a colorful Hindu celebration."
+    ],
+    "trivia": [
+      "Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures.",
+      "The city has a modern skyline with many skyscrapers."
+    ],
+    "options": [
+      "Kuala Lumpur",
+      "Singapore",
+      "Bangkok",
+      "Jakarta"
+    ]
+  },
+  {
+    "city": "Cape Town",
+    "country": "South Africa",
+    "clues": [
+      "This city is famous for its stunning natural beauty, including Table Mountain.",
+      "Known for its vibrant cultural scene and beautiful beaches."
+    ],
+    "fun_fact": [
+      "Cape Town is home to the Cape of Good Hope, a historic navigation point.",
+      "The city has a diverse wildlife, including penguins and baboons."
+    ],
+    "trivia": [
+      "Cape Town hosted the 2010 FIFA World Cup.",
+      "The city is known for its wine region and scenic drives."
+    ],
+    "options": [
+      "Cape Town",
+      "Johannesburg",
+      "Durban",
+      "Pretoria"
+    ]
+  },
+  {
+    "city": "Sao Paulo",
+    "country": "Brazil",
+    "clues": [
+      "This city is the largest in Brazil and known for its diverse cultural scene.",
+      "Famous for its vibrant nightlife and street food."
+    ],
+    "fun_fact": [
+      "Sao Paulo is home to many museums and art galleries.",
+      "The city hosts the Sao Paulo Fashion Week."
+    ],
+    "trivia": [
+      "Sao Paulo is one of the most populous cities in the Americas.",
+      "The city has a large Japanese community."
+    ],
+    "options": [
+      "Sao Paulo",
+      "Rio de Janeiro",
+      "Brasilia",
+      "Buenos Aires"
+    ]
+  },
+  {
+    "city": "Istanbul",
+    "country": "Turkey",
+    "clues": [
+      "This city straddles Europe and Asia across the Bosphorus Strait.",
+      "Known for its rich history and landmarks like Hagia Sophia."
+    ],
+    "fun_fact": [
+      "Istanbul was once the capital of the Byzantine and Ottoman Empires.",
+      "The city is famous for its Grand Bazaar and spice markets."
+    ],
+    "trivia": [
+      "Istanbul is home to many historical mosques and churches.",
+      "The city hosts the Istanbul Film Festival."
+    ],
+    "options": [
+      "Istanbul",
+      "Ankara",
+      "Izmir",
+      "Antalya"
+    ]
+  },
+  {
+    "city": "Barcelona",
+    "country": "Spain",
+    "clues": [
+      "This city is famous for its architecture by Antoni Gaudí.",
+      "Known for its beautiful beaches and vibrant nightlife."
+    ],
+    "fun_fact": [
+      "Barcelona is home to the famous Park Güell.",
+      "The city hosts the Barcelona Football Club, one of the most successful teams in the world."
+    ],
+    "trivia": [
+      "Barcelona hosted the 1992 Summer Olympics.",
+      "The city is known for its gastronomy, including tapas and paella."
+    ],
+    "options": [
+      "Barcelona",
+      "Madrid",
+      "Seville",
+      "Valencia"
+    ]
+  },
+  {
+    "city": "Athens",
+    "country": "Greece",
+    "clues": [
+      "This city is the cradle of Western civilization.",
+      "Known for its ancient ruins like the Acropolis."
+    ],
+    "fun_fact": [
+      "Athens hosted the first modern Olympic Games in 1896.",
+      "The city is home to many ancient theaters and historical sites."
+    ],
+    "trivia": [
+      "Athens is famous for its delicious Greek cuisine, including gyro and moussaka.",
+      "The city has a vibrant nightlife with many bars and clubs."
+    ],
+    "options": [
+      "Athens",
+      "Santorini",
+      "Mykonos",
+      "Thessaloniki"
+    ]
+  },
+  {
+    "city": "Stockholm",
+    "country": "Sweden",
+    "clues": [
+      "This city is built on a series of islands.",
+      "Known for its stunning architecture and vibrant cultural scene."
+    ],
+    "fun_fact": [
+      "Stockholm is home to the Vasa Museum, featuring a preserved 17th-century ship.",
+      "The city hosts the Nobel Prize ceremonies."
+    ],
+    "trivia": [
+      "Stockholm is famous for its design and innovation.",
+      "The city has a beautiful Old Town with cobblestone streets."
+    ],
+    "options": [
+      "Stockholm",
+      "Gothenburg",
+      "Malmö",
+      "Uppsala"
+    ]
+  },
+  {
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "clues": [
+      "This city is known for its European-style architecture and vibrant cultural scene.",
+      "Famous for its tango music and dance."
+    ],
+    "fun_fact": [
+      "Buenos Aires is home to the Teatro Colón, one of the world’s most famous opera houses.",
+      "The city has a rich history and is known as the 'Paris of South America'."
+    ],
+    "trivia": [
+      "Buenos Aires hosted the first FIFA World Cup in 1930.",
+      "The city is famous for its asado, a traditional barbecue."
+    ],
+    "options": [
+      "Buenos Aires",
+      "Cordoba",
+      "Mendoza",
+      "Rosario"
+    ]
+  },
+  {
+    "city": "Vancouver",
+    "country": "Canada",
+    "clues": [
+      "This city is known for its stunning natural beauty, including mountains and forests.",
+      "Famous for its diverse cultural scene and outdoor activities."
+    ],
+    "fun_fact": [
+      "Vancouver hosted the 2010 Winter Olympics.",
+      "The city is home to many parks and gardens, including Stanley Park."
+    ],
+    "trivia": [
+      "Vancouver is one of the most multicultural cities in the world.",
+      "The city has a thriving film industry."
+    ],
+    "options": [
+      "Vancouver",
+      "Toronto",
+      "Montreal",
+      "Calgary"
+    ]
+  },
+  {
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "clues": [
+      "This city is famous for its canals and historic architecture.",
+      "Known for its vibrant arts scene and liberal attitude."
+    ],
+    "fun_fact": [
+      "Amsterdam is home to the Rijksmuseum and Van Gogh Museum.",
+      "The city has a rich history as a major trading port."
+    ],
+    "trivia": [
+      "Amsterdam is famous for its tulip fields and flower markets.",
+      "The city hosts many festivals throughout the year."
+    ],
+    "options": [
+      "Amsterdam",
+      "Rotterdam",
+      "Utrecht",
+      "The Hague"
+    ]
+  },
+  {
+    "city": "Prague",
+    "country": "Czech Republic",
+    "clues": [
+      "This city is famous for its medieval architecture and historic bridges.",
+      "Known for its vibrant cultural scene and beer culture."
+    ],
+    "fun_fact": [
+      "Prague is home to the Charles Bridge, a historic pedestrian bridge.",
+      "The city has a rich history as the capital of Bohemia."
+    ],
+    "trivia": [
+      "Prague is famous for its beer, with many local breweries.",
+      "The city hosts many festivals, including the Prague Spring classical music festival."
+    ],
+    "options": [
+      "Amsterdam",
+      "Rotterdam",
+      "Prague",
+      "The Hague"
+    ]
+  },
+  {
+    "city": "Prague",
+    "country": "Czech Republic",
+    "clues": [
+      "This city is famous for its medieval architecture and historic bridges.",
+      "Known for its vibrant cultural scene and beer culture."
+    ],
+    "fun_fact": [
+      "Prague is home to the Charles Bridge, a historic pedestrian bridge.",
+      "The city has a rich history as the capital of Bohemia."
+    ],
+    "trivia": [
+      "Prague is famous for its beer, with many local breweries.",
+      "The city hosts many festivals, including the Prague Spring classical music festival."
+    ],
+    "options": [
+      "Prague",
+      "Brno",
+      "Ostrava",
+      "Pilsen"
+    ]
+  },
+  {
+    "city": "Vienna",
+    "country": "Austria",
+    "clues": [
+      "This city is known for its grand palaces and opera houses.",
+      "Famous for its coffee culture and pastries like the Sacher Torte."
+    ],
+    "fun_fact": [
+      "Vienna was once the capital of the Austro-Hungarian Empire.",
+      "The city is home to many famous composers, including Mozart and Beethoven."
+    ],
+    "trivia": [
+      "Vienna hosts the Vienna Philharmonic New Year's Concert.",
+      "The city is famous for its Christmas markets."
+    ],
+    "options": [
+      "Vienna",
+      "Salzburg",
+      "Innsbruck",
+      "Graz"
+    ]
+  },
+  {
+    "city": "Copenhagen",
+    "country": "Denmark",
+    "clues": [
+      "This city is known for its sustainable living and green initiatives.",
+      "Famous for its Tivoli Gardens amusement park."
+    ],
+    "fun_fact": [
+      "Copenhagen is home to the Little Mermaid statue.",
+      "The city has a vibrant food scene with many Michelin-starred restaurants."
+    ],
+    "trivia": [
+      "Copenhagen hosted the 1995 European Athletics Championships.",
+      "The city is famous for its cycling culture."
+    ],
+    "options": [
+      "Copenhagen",
+      "Aarhus",
+      "Odense",
+      "Aalborg"
+    ]
+  },
+  {
+    "city": "Zurich",
+    "country": "Switzerland",
+    "clues": [
+      "This city is known for its financial sector and picturesque lake views.",
+      "Famous for its high standard of living and cleanliness."
+    ],
+    "fun_fact": [
+      "Zurich is home to many international companies and banks.",
+      "The city has a rich history dating back to the Roman era."
+    ],
+    "trivia": [
+      "Zurich is famous for its chocolate and watches.",
+      "The city hosts many cultural festivals throughout the year."
+    ],
+    "options": [
+      "Zurich",
+      "Geneva",
+      "Bern",
+      "Basel"
+    ]
+  },
+  {
+    "city": "Helsinki",
+    "country": "Finland",
+    "clues": [
+      "This city is known for its design and innovation.",
+      "Famous for its natural beauty, including forests and lakes."
+    ],
+    "fun_fact": [
+      "Helsinki is home to the Temppeliaukio Church, built into solid rock.",
+      "The city hosts the Helsinki Design Week."
+    ],
+    "trivia": [
+      "Helsinki is famous for its education system and tech industry.",
+      "The city has a vibrant cultural scene with many museums."
+    ],
+    "options": [
+      "Helsinki",
+      "Espoo",
+      "Vantaa",
+      "Turku"
+    ]
+  },
+  {
+    "city": "Budapest",
+    "country": "Hungary",
+    "clues": [
+      "This city is famous for its thermal baths and historic architecture.",
+      "Known for its vibrant cultural scene and nightlife."
+    ],
+    "fun_fact": [
+      "Budapest is home to the Széchenyi Thermal Bath, one of the largest in Europe.",
+      "The city has a rich history as the capital of the Austro-Hungarian Empire."
+    ],
+    "trivia": [
+      "Budapest is famous for its goulash and paprikás csirke.",
+      "The city hosts many festivals, including the Sziget music festival."
+    ],
+    "options": [
+      "Budapest",
+      "Debrecen",
+      "Szeged",
+      "Pécs"
+    ]
+  },
+  {
+    "city": "Warsaw",
+    "country": "Poland",
+    "clues": [
+      "This city is known for its historic Old Town and cultural landmarks.",
+      "Famous for its resilience during World War II."
+    ],
+    "fun_fact": [
+      "Warsaw is home to the Warsaw Uprising Museum.",
+      "The city has a vibrant cultural scene with many theaters and museums."
+    ],
+    "trivia": [
+      "Warsaw is famous for its pierogi and bigos.",
+      "The city hosts many festivals, including the Warsaw Film Festival."
+    ],
+    "options": [
+      "Warsaw",
+      "Krakow",
+      "Gdansk",
+      "Poznan"
+    ]
+  },
+  {
+    "city": "Lisbon",
+    "country": "Portugal",
+    "clues": [
+      "This city is famous for its historic trams and picturesque hills.",
+      "Known for its vibrant cultural scene and seafood."
+    ],
+    "fun_fact": [
+      "Lisbon is home to the Belem Tower, a UNESCO World Heritage Site.",
+      "The city has a rich history as a major trading port."
+    ],
+    "trivia": [
+      "Lisbon is famous for its fado music.",
+      "The city hosts many festivals, including the Lisbon Festival."
+    ],
+    "options": [
+      "Lisbon",
+      "Porto",
+      "Funchal",
+      "Coimbra"
+    ]
+  },
+  {
+    "city": "Bratislava",
+    "country": "Slovakia",
+    "clues": [
+      "This city is known for its historic Old Town and castle.",
+      "Famous for its vibrant cultural scene and proximity to Vienna."
+    ],
+    "fun_fact": [
+      "Bratislava is home to the Bratislava Castle, which offers stunning views.",
+      "The city has a rich history as a major trading center."
+    ],
+    "trivia": [
+      "Bratislava is famous for its traditional Slovak cuisine.",
+      "The city hosts many festivals, including the Bratislava Music Festival."
+    ],
+    "options": [
+      "Bratislava",
+      "Kosice",
+      "Zilina",
+      "Nitra"
+    ]
+  },
+  {
+    "city": "Tallinn",
+    "country": "Estonia",
+    "clues": [
+      "This city is known for its well-preserved medieval architecture.",
+      "Famous for its digital innovation and e-government services."
+    ],
+    "fun_fact": [
+      "Tallinn is home to the Tallinn Old Town, a UNESCO World Heritage Site.",
+      "The city hosts the Tallinn Digital Summit."
+    ],
+    "trivia": [
+      "Tallinn is famous for its startup culture and tech industry.",
+      "The city has a vibrant cultural scene with many festivals."
+    ],
+    "options": [
+      "Tallinn",
+      "Tartu",
+      "Narva",
+      "Parnu"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "country": "India",
+    "clues": [
+      "This city is known as the financial capital of India.",
+      "Famous for its Bollywood film industry."
+    ],
+    "fun_fact": [
+      "Mumbai is home to the Gateway of India, a historic monument.",
+      "The city has a vibrant street food scene with dishes like vada pav."
+    ],
+    "trivia": [
+      "Mumbai is one of the most populous cities in the world.",
+      "The city hosts the famous Ganesh Chaturthi festival."
+    ],
+    "options": [
+      "Mumbai",
+      "Delhi",
+      "Bangalore",
+      "Hyderabad"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "country": "India",
+    "clues": [
+      "This city is the capital of India and has a rich historical past.",
+      "Known for its monuments like the Red Fort and Qutub Minar."
+    ],
+    "fun_fact": [
+      "Delhi is home to many UNESCO World Heritage Sites.",
+      "The city has a diverse cultural scene with many festivals throughout the year."
+    ],
+    "trivia": [
+      "Delhi is famous for its street food, including dishes like chaat and kebabs.",
+      "The city hosts many cultural events, including the Delhi International Arts Festival."
+    ],
+    "options": [
+      "Delhi",
+      "Mumbai",
+      "Bangalore",
+      "Hyderabad"
+    ]
+  },
+  {
+    "city": "Bangalore",
+    "country": "India",
+    "clues": [
+      "This city is known as the 'Silicon Valley of India' due to its tech industry.",
+      "Famous for its pleasant weather and vibrant cultural scene."
+    ],
+    "fun_fact": [
+      "Bangalore is home to many multinational companies and startups.",
+      "The city has a diverse food scene with many international cuisines."
+    ],
+    "trivia": [
+      "Bangalore hosted the 1996 Miss World pageant.",
+      "The city is known for its beautiful parks and gardens."
+    ],
+    "options": [
+      "Bangalore",
+      "Mumbai",
+      "Delhi",
+      "Hyderabad"
+    ]
+  },
+  {
+    "city": "Hyderabad",
+    "country": "India",
+    "clues": [
+      "This city is known for its IT industry and historical landmarks like the Charminar.",
+      "Famous for its biryani and pearls."
+    ],
+    "fun_fact": [
+      "Hyderabad is home to the Golconda Fort, a historic fortress.",
+      "The city has a rich cultural heritage with many festivals throughout the year."
+    ],
+    "trivia": [
+      "Hyderabad is famous for its traditional Hyderabadi cuisine.",
+      "The city hosts many cultural events, including the Hyderabad Literary Festival."
+    ],
+    "options": [
+      "Hyderabad",
+      "Mumbai",
+      "Delhi",
+      "Bangalore"
+    ]
+  },
+  {
+    "city": "Ahmedabad",
+    "country": "India",
+    "clues": [
+      "This city is known for its textile industry and historical landmarks like the Sabarmati Ashram.",
+      "Famous for its vibrant cultural scene and traditional Gujarati cuisine."
+    ],
+    "fun_fact": [
+      "Ahmedabad is home to the Akshardham Temple, a stunning spiritual complex.",
+      "The city has a rich history dating back to the 11th century."
+    ],
+    "trivia": [
+      "Ahmedabad is famous for its traditional Gujarati dishes like dhokla and khakhra.",
+      "The city hosts many festivals, including the Navratri celebrations."
+    ],
+    "options": [
+      "Ahmedabad",
+      "Surat",
+      "Vadodara",
+      "Rajkot"
+    ]
+  },
+  {
+    "city": "Chennai",
+    "country": "India",
+    "clues": [
+      "This city is known for its automotive industry and cultural heritage.",
+      "Famous for its traditional Tamil cuisine and classical music."
+    ],
+    "fun_fact": [
+      "Chennai is home to the Marina Beach, one of the longest urban beaches in the world.",
+      "The city has a rich history dating back to the British colonial era."
+    ],
+    "trivia": [
+      "Chennai is famous for its traditional Tamil dishes like dosa and idli.",
+      "The city hosts many cultural events, including the Chennai Music Season."
+    ],
+    "options": [
+      "Chennai",
+      "Bangalore",
+      "Hyderabad",
+      "Kolkata"
+    ]
+  },
+  {
+    "city": "Kolkata",
+    "country": "India",
+    "clues": [
+      "This city is known for its rich cultural heritage and historical landmarks like the Victoria Memorial.",
+      "Famous for its traditional Bengali cuisine and vibrant arts scene."
+    ],
+    "fun_fact": [
+      "Kolkata is home to the Indian Museum, one of the oldest museums in India.",
+      "The city has a rich history as the former capital of British India."
+    ],
+    "trivia": [
+      "Kolkata is famous for its traditional Bengali dishes like fish curry and mishti doi.",
+      "The city hosts many cultural events, including the Kolkata Book Fair."
+    ],
+    "options": [
+      "Kolkata",
+      "Mumbai",
+      "Delhi",
+      "Bangalore"
+    ]
+  },
+  {
+    "city": "Surat",
+    "country": "India",
+    "clues": [
+      "This city is known for its diamond cutting and polishing industry.",
+      "Famous for its vibrant cultural scene and traditional Gujarati cuisine."
+    ],
+    "fun_fact": [
+      "Surat is home to the Dumas Beach, a popular tourist destination.",
+      "The city has a rich history dating back to the Mughal era."
+    ],
+    "trivia": [
+      "Surat is famous for its traditional Gujarati dishes like undhiyu and handvo.",
+      "The city hosts many festivals, including the Navratri celebrations."
+    ],
+    "options": [
+      "Surat",
+      "Ahmedabad",
+      "Vadodara",
+      "Rajkot"
+    ]
+  },
+  {
+    "city": "Pune",
+    "country": "India",
+    "clues": [
+      "This city is known for its educational institutions and IT industry.",
+      "Famous for its vibrant cultural scene and historical landmarks like the Shaniwar Wada."
+    ],
+    "fun_fact": [
+      "Pune is home to the Osho International Meditation Resort.",
+      "The city has a rich history dating back to the Maratha Empire."
+    ],
+    "trivia": [
+      "Pune is famous for its traditional Maharashtrian dishes like misal pav and vada pav.",
+      "The city hosts many cultural events, including the Pune International Film Festival."
+    ],
+    "options": [
+      "Pune",
+      "Mumbai",
+      "Nagpur",
+      "Aurangabad"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "country": "India",
+    "clues": [
+      "This city is known as the 'Pink City' due to its historic architecture.",
+      "Famous for its vibrant cultural scene and traditional Rajasthani cuisine."
+    ],
+    "fun_fact": [
+      "Jaipur is home to the Hawa Mahal, a stunning palace.",
+      "The city has a rich history as the capital of the Rajput kingdom."
+    ],
+    "trivia": [
+      "Jaipur is famous for its traditional Rajasthani dishes like dal baati churma.",
+      "The city hosts many cultural events, including the Jaipur Literature Festival."
+    ],
+    "options": [
+      "Jaipur",
+      "Udaipur",
+      "Jodhpur",
+      "Jaisalmer"
+    ]
+  },
+  {
+    "city": "Lucknow",
+    "country": "India",
+    "clues": [
+      "This city is known for its rich cultural heritage and historical landmarks like the Bara Imambara.",
+      "Famous for its traditional Awadhi cuisine."
+    ],
+    "fun_fact": [
+      "Lucknow is home to the Chhota Imambara, a beautiful mosque.",
+      "The city has a rich history as the capital of the Awadh kingdom."
+    ],
+    "trivia": [
+      "Lucknow is famous for its traditional dishes like kebabs and biryani.",
+      "The city hosts many cultural events, including the Lucknow Mahotsav."
+    ],
+    "options": [
+      "Lucknow",
+      "Kanpur",
+      "Varanasi",
+      "Agra"
+    ]
+  },
+  {
+    "city": "Kanpur",
+    "country": "India",
+    "clues": [
+      "This city is known for its leather industry and historical landmarks like the Bithoor.",
+      "Famous for its vibrant cultural scene."
+    ],
+    "fun_fact": [
+      "Kanpur is home to the Indian Institute of Technology Kanpur.",
+      "The city has a rich history dating back to the British colonial era."
+    ],
+    "trivia": [
+      "Kanpur is famous for its traditional North Indian cuisine.",
+      "The city hosts many cultural events, including the Kanpur Mahotsav."
+    ],
+    "options": [
+      "Kanpur",
+      "Lucknow",
+      "Varanasi",
+      "Agra"
+    ]
+  },
+  {
+    "city": "Varanasi",
+    "country": "India",
+    "clues": [
+      "This city is one of the oldest continuously inhabited cities in the world.",
+      "Famous for its spiritual significance and traditional Indian cuisine."
+    ],
+    "fun_fact": [
+      "Varanasi is home to the Kashi Vishwanath Temple, a sacred Hindu site.",
+      "The city has a rich history dating back to ancient times."
+    ],
+    "trivia": [
+      "Varanasi is famous for its traditional Indian dishes like thandai and malaiyyo.",
+      "The city hosts many cultural events, including the Varanasi Mahotsav."
+    ],
+    "options": [
+      "Varanasi",
+      "Lucknow",
+      "Kanpur",
+      "Agra"
+    ]
+  },
+  {
+    "city": "Agra",
+    "country": "India",
+    "clues": [
+      "This city is home to the Taj Mahal, one of the Seven Wonders of the World.",
+      "Famous for its historical landmarks like the Agra Fort."
+    ],
+    "fun_fact": [
+      "Agra is home to the Fatehpur Sikri, a historic city.",
+      "The city has a rich history as the capital of the Mughal Empire."
+    ],
+    "trivia": [
+      "Agra is famous for its traditional Mughlai cuisine.",
+      "The city hosts many cultural events, including the Taj Mahotsav."
+    ],
+    "options": [
+      "Agra",
+      "Delhi",
+      "Jaipur",
+      "Lucknow"
+    ]
+  },
+  {
+    "city": "Nagpur",
+    "country": "India",
+    "clues": [
+      "This city is known as the 'Orange City' due to its orange production.",
+      "Famous for its vibrant cultural scene and historical landmarks like the Deekshabhoomi."
+    ],
+    "fun_fact": [
+      "Nagpur is home to the Pench National Park, a tiger reserve.",
+      "The city has a rich history dating back to the British colonial era."
+    ],
+    "trivia": [
+      "Nagpur is famous for its traditional Maharashtrian dishes like Saoji cuisine.",
+      "The city hosts many cultural events, including the Nagpur Mahotsav."
+    ],
+    "options": [
+      "Nagpur",
+      "Pune",
+      "Mumbai",
+      "Aurangabad"
+    ]
+  },
+  {
+    "city": "Aurangabad",
+    "country": "India",
+    "clues": [
+      "This city is known for its historical landmarks like the Ajanta and Ellora Caves.",
+      "Famous for its traditional Indian cuisine."
+    ],
+    "fun_fact": [
+      "Aurangabad is home to the Bibi Ka Maqbara, a historic mausoleum.",
+      "The city has a rich history dating back to the Mughal era."
+    ],
+    "trivia": [
+      "Aurangabad is famous for its traditional Mughlai dishes like naan and kebabs.",
+      "The city hosts many cultural events, including the Aurangabad Festival."
+    ],
+    "options": [
+      "Aurangabad",
+      "Pune",
+      "Mumbai",
+      "Nagpur"
+    ]
+  },
+  {
+    "city": "Chandigarh",
+    "country": "India",
+    "clues": [
+      "This city is known for its well-planned architecture and natural beauty.",
+      "Famous for its vibrant cultural scene and traditional North Indian cuisine."
+    ],
+    "fun_fact": [
+      "Chandigarh is home to the Rock Garden, a unique sculpture park.",
+      "The city has a rich history as a planned city designed by Le Corbusier."
+    ],
+    "trivia": [
+      "Chandigarh is famous for its traditional Punjabi dishes like sarson ka saag and makki di roti.",
+      "The city hosts many cultural events, including the Chandigarh Carnival."
+    ],
+    "options": [
+      "Chandigarh",
+      "Delhi",
+      "Amritsar",
+      "Ludhiana"
+    ]
+  },
+  {
+    "city": "Amritsar",
+    "country": "India",
+    "clues": [
+      "This city is known for its spiritual significance and historical landmarks like the Golden Temple.",
+      "Famous for its traditional Punjabi cuisine."
+    ],
+    "fun_fact": [
+      "Amritsar is home to the Wagah Border, a ceremonial border crossing.",
+      "The city has a rich history dating back to the Sikh Empire."
+    ],
+    "trivia": [
+      "Amritsar is famous for its traditional Punjabi dishes like sarson ka saag and makki di roti.",
+      "The city hosts many cultural events, including the Amritsar Heritage Walk."
+    ],
+    "options": [
+      "Amritsar",
+      "Chandigarh",
+      "Ludhiana",
+      "Jalandhar"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "country": "India",
+    "clues": [
+      "This city is known for its textile industry and vibrant cultural scene.",
+      "Famous for its traditional Punjabi cuisine."
+    ],
+    "fun_fact": [
+      "Ludhiana is home to the Punjab Agricultural University.",
+      "The city has a rich history dating back to the British colonial era."
+    ],
+    "trivia": [
+      "Ludhiana is famous for its traditional Punjabi dishes like butter chicken and naan.",
+      "The city hosts many cultural events, including the Ludhiana Festival."
+    ],
+    "options": [
+      "Ludhiana",
+      "Amritsar",
+      "Chandigarh",
+      "Jalandhar"
+    ]
+  },
+  {
+    "city": "Jalandhar",
+    "country": "India",
+    "clues": [
+      "This city is known for its sports industry and historical landmarks like the Devi Talab Mandir.",
+      "Famous for its traditional Punjabi cuisine."
+    ],
+    "fun_fact": [
+      "Jalandhar is home to the Wonderland Theme Park.",
+      "The city has a rich history dating back to the British colonial era."
+    ],
+    "trivia": [
+      "Jalandhar is famous for its traditional Punjabi dishes like makki di roti and sarson ka saag.",
+      "The city hosts many cultural events, including the Jalandhar Festival."
+    ],
+    "options": [
+      "Jalandhar",
+      "Ludhiana",
+      "Amritsar",
+      "Chandigarh"
+    ]
   }
 ]
