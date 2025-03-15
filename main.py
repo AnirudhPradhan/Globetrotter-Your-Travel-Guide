@@ -11,8 +11,8 @@ app = Flask(__name__)
 app.secret_key = secret_key
 
 
-def load_destinations():
-    with open("Database/destinations.json", "r") as file:
+def load_destinations(): 
+    with open("Dataset/destinations.json", "r") as file:
         return json.load(file)
 
 # @app.route("/", methods=["GET"])
@@ -48,6 +48,10 @@ def check_answer():
 
     return render_template("result.html", result=result)
 
+
+
+
+
 ''' user auth '''
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
@@ -68,7 +72,7 @@ class User(db.Model):
     def check_password(self, password):
         return bcrypt.checkpw(password.encode('utf-8'), self.password.encode('utf-8'))
 
-# Create database tables
+# Create Database tables
 with app.app_context():
     db.create_all()
 
@@ -138,10 +142,10 @@ def login():
     
 #     return render_template('dashboard.html', user=user)
 
-# @app.route('/logout')
-# def logout():
-#     session.pop('email', None)
-#     return redirect('/login')
+@app.route('/logout')
+def logout():
+    session.pop('email', None)
+    return redirect('/login')
 
 if __name__ == '__main__':
     app.run(debug=True)
