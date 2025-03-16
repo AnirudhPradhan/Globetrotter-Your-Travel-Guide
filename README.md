@@ -64,31 +64,6 @@ flask run
 
 ---
 
-## 📁 Project Structure
-```
-Globetrotter/
-├── Dataset/
-│   └── destinations.json          # JSON file with destination data.
-├── images/
-│   └── bg.png                     # Background image.
-├── instance/
-│   └── database.db                # SQLite database file (auto-generated).
-├── static/
-│   ├── css/
-│       └── styles.css             # Custom CSS for styling.
-├── templates/
-│   ├── base.html                  # Base template for layouts.
-│   ├── login.html                 # Login page template.
-│   ├── register.html              # Registration page template.
-│   ├── quiz.html                  # Quiz page template.
-│   ├── result.html                # Result page template.
-│   └── profile.html               # Profile page template.
-├── main.py                        # Flask application file.
-└── README.md                      # Project documentation file.
-```
-
----
-
 ## 🛠 Technologies Used
 - **Backend:** Flask (Python)
 - **Database:** SQLite
