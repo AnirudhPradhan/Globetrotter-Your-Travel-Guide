@@ -30,8 +30,8 @@ class User(db.Model):
     name = db.Column(db.String(100), nullable=False)
     email = db.Column(db.String(100), nullable=False, unique=True)
     password = db.Column(db.String(100), nullable=False)
-    wins = db.Column(db.Integer, default=0)  # Track wins
-    losses = db.Column(db.Integer, default=0)  # Track losses
+    wins = db.Column(db.Integer, default=0)  
+    losses = db.Column(db.Integer, default=0)  
 
     def __init__(self, email, password, name):
         self.name = name
@@ -45,7 +45,6 @@ class User(db.Model):
 with app.app_context():
     db.create_all()
 
-# Helper Functions
 def load_destinations():
     with open("Dataset/destinations.json", "r") as file:
         return json.load(file)

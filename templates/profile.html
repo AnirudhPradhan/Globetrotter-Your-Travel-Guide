@@ -6,7 +6,6 @@
 <div class="container mt-5">
     <h2 class="text-center text-white">Profile</h2>
 
-    <!-- Profile Card -->
     <div class="card mx-auto" style="max-width: 400px; background-color: rgba(255, 255, 255, 0.9);">
         <div class="card-body text-center">
             <h4 class="card-title">{{ user.name }}</h4>
@@ -14,14 +13,12 @@
             <p class="card-text">Wins: <strong>{{ user.wins }}</strong></p>
             <p class="card-text">Losses: <strong>{{ user.losses }}</strong></p>
 
-            <!-- Reset Stats Form -->
             <form action="{{ url_for('profile') }}" method="POST">
                 <button type="submit" class="btn btn-danger w-100 rounded-pill">Reset Stats</button>
             </form>
         </div>
     </div>
 
-    <!-- Back to Dashboard -->
     <div class="text-center mt-3">
         <a href="{{ url_for('dashboard') }}" class="btn btn-primary rounded-pill">Back to Dashboard</a>
     </div>
