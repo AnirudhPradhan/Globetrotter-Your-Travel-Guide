@@ -6,6 +6,23 @@ body {
     color: #333;
     line-height: 1.6;
 }
+#goUpBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; 
+}
+
+#goUpBtn:hover {
+    background-color: #555;
+}
 
 .container {
     max-width: 800px;
@@ -269,3 +286,9 @@ input[type="submit"]:hover {
         width: 100%;
     }
 }
+@media (max-width: 600px) {
+    .navbar-wrapper {
+        overflow: visible;
+    }
+}
+
