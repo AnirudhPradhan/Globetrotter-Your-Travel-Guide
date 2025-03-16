@@ -30,6 +30,8 @@ class User(db.Model):
     name = db.Column(db.String(100), nullable=False)
     email = db.Column(db.String(100), nullable=False, unique=True)
     password = db.Column(db.String(100), nullable=False)
+    wins = db.Column(db.Integer, default=0)  # Track wins
+    losses = db.Column(db.Integer, default=0)  # Track losses
 
     def __init__(self, email, password, name):
         self.name = name
@@ -49,6 +51,7 @@ def load_destinations():
         return json.load(file)
 
 # Routes
+
 @app.route('/')
 def home():
     return redirect(url_for('login'))
@@ -75,8 +78,19 @@ def check_answer():
     user_answer = request.form.get("option")
     destination = session.get('current_destination', {})
     
+    user = User.query.filter_by(email=session['email']).first()
+
+    is_correct = user_answer == destination.get("city", "")
+    
+    if is_correct:
+        user.wins += 1  # Increment wins if correct
+    else:
+        user.losses += 1  # Increment losses if incorrect
+    
+    db.session.commit()
+
     result = {
-        "is_correct": user_answer == destination.get("city", ""),
+        "is_correct": is_correct,
         "user_answer": user_answer,
         "correct_answer": f"{destination.get('city', '')}, {destination.get('country', '')}",
         "fun_facts": random.sample(destination.get("fun_fact", []), 2),
@@ -140,6 +154,20 @@ def login():
 def logout():
     session.pop('email', None)
     return redirect(url_for('login'))
+
+@app.route('/profile', methods=['GET', 'POST'])
+@login_required
+def profile():
+    user = User.query.filter_by(email=session['email']).first()
+
+    if request.method == 'POST':
+        # Reset wins and losses
+        user.wins = 0
+        user.losses = 0
+        db.session.commit()
+        return redirect(url_for('profile'))
+
+    return render_template('profile.html', user=user)
 
 if __name__ == '__main__':
     app.run(debug=True)  
