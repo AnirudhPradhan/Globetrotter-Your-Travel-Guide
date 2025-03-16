@@ -54,7 +54,7 @@ def load_destinations():
 
 @app.route('/')
 def home():
-    return redirect(url_for('login'))
+    return redirect(url_for('register'))
 
 @app.route('/dashboard')
 @login_required
