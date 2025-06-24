@@ -1,4 +1,4 @@
-# Globetrotter - Travel Guessing Game
+# Globetrotter - Your travel guide
 
 Welcome to **Globetrotter**, an engaging and interactive travel guessing game where players explore famous destinations worldwide! Test your knowledge, learn fun facts, and enjoy a visually appealing interface inspired by global landmarks.
 
